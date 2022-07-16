@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body{
+    background-image: url('../img/messiwallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+html {
+    font-size: 62.5%;
+}
+nav ul li:hover{
+    background-color: rgba(101, 184, 220, 1);
+    transform: translateX(-10px);
+}
+.encabezado img {
+    width: 20%;
+}
+.encabezado ul li {
+    list-style: none;
+    padding: 1%;
+}
+.encabezado ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+.encabezadoMainMenuLista{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.encabezadoMainMenu{
+    margin-right: 5%;
+}
+.encabezado{
+    background-color: rgba(98, 223, 239, .7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezadoLogo{
+    margin-left: 3%;
+}
+/* .ojosmessi{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 40%;
+}
+.container{
+    display: flex;
+    width: 100%;
+} */
+main img{
+    width: 100%;
+}
+.pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(98, 223, 239, .7);
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+.size{
+    width: 5%;
+    height: 5%;
+}
+.redes img{
+    height: 5vh;
+    width: 5vh;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redesCenter{
+    display: flex;
+}
+main figure figcaption{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: rgba(98, 223, 239, .7);
+}
+.sizeBalones{
+    display: flex;
+    width: 20vh;
+    height: 20vh;
+}
+
+#historia h2{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+#historia p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#historia{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    width: 50%;
+    margin-left: 25%;
+    padding: 2%;
+}
+#balones{
+    display: flex;
+    flex-direction: column;
+}
+#indexParrafos{
+    background: rgb(255, 255, 255);
+}
+#galeria img{
+    width: 20vh;
+    height: 20vh;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+@media (min-width: 468px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .encabezado nav ul li a{
+        font-size: 2rem;
+    }
+    .gallery a{
+        display: flex;
+        height: 50%;
+        width: 50%;
+        margin-left: 23%;
+    }
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    color: white;
+}
+.contactForm{
+    background-color: #72c9f8;
+    padding: 25px;
+}
+.contactForm legend{
+    font-size: 2rem;
+}
+.contactForm fieldset{ 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.contactForm input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.contactForm textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.contactForm input[type=submit]{
+    margin-bottom: 10px;
+}
+.gallery figure:hover{
+    transform: scaleX(1.05) scaleY(1.05);
+    transition: 1s;
+}
+.gallery figure:hover::backdrop{
+    transform: scaleX(1.5), scaleY(1.5);
+    transition: 1s;
+}
